@@ -50,7 +50,7 @@ $result = executeQuery($query);
           <div class="col-12">
             <div class="card shadow-sm rounded-4">
               <div class="card-body">
-                <h5 class="card-title">About</h5>
+                <h5 class="card-title ps-2">About</h5>
                 <table class="table table-borderless p-0">
                   <tbody>
                     <tr>
