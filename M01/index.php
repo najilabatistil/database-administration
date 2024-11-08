@@ -32,7 +32,7 @@ if (isset($_POST['btnPost'])) {
 }
 
 // Query for getting post info
-$postQuery = "SELECT userID, content, privacy FROM posts";
+$postQuery = "SELECT content, privacy FROM posts WHERE userID = 1";
 $postResult = executeQuery($postQuery);
 
 ?>
@@ -58,7 +58,7 @@ $postResult = executeQuery($postQuery);
     <!-- User -->
     <div class="row">
       <div class="col text-center pt-3">
-        <img src=<?php echo $_SESSION["profilePicture"] ?> class="img-fluid shadow-sm rounded-circle" style="width: 175px;">
+        <img src=<?php echo $_SESSION['profilePicture'] ?> class="img-fluid shadow-sm rounded-circle" style="width: 175px;">
       </div>
     </div>
 
@@ -175,7 +175,7 @@ $postResult = executeQuery($postQuery);
           </div>
         </div>
 
-    <?php
+      <?php
       }
     }
     ?>
