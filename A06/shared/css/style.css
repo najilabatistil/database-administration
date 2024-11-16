@@ -43,6 +43,10 @@ img {
   border: 1px solid #000000;
 }
 
+.profile-dropdown:hover, .profile-dropdown:active {
+  background-color: #385dd6 !important;
+}
+
 .options-btn:hover, .options-btn:active, .options-btn:focus {
   background-color: #f3f9fc !important;
   border-color: #cacaca !important;

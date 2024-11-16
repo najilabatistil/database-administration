@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) {
   header("Location: login.php");
 }
 
-// Get post form content for insertion
+// Create post
 if (isset($_POST['btnPost'])) {
   $content = $_POST['content'];
   $privacy = $_POST['privacy'];
@@ -67,40 +67,14 @@ $postResult = executeQuery($postQuery);
           <?php echo $_SESSION['name'] ?>
         </h4>
         <h6>
-          <?php echo $_SESSION['username'] ?>
+          <?php echo "@" . $_SESSION['username'] ?>
         </h6>
       </div>
     </div>
-    <!-- About -->
+    <!-- User Info -->
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-lg-9 py-3">
-        <div class="card shadow-sm rounded-4 about-card">
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-borderless table-responsive p-0 m-0">
-                <tbody>
-                  <tr>
-                    <td>Location</td>
-                    <td><?php echo $_SESSION['address'] ?></td>
-                  </tr>
-                  <tr>
-                    <td>Birthday</td>
-                    <td><?php echo $_SESSION['birthDay'] ?></td>
-                  </tr>
-                  <tr>
-                    <td>Email Address</td>
-                    <td><?php echo $_SESSION['email'] ?></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="row mt-3">
-              <div class="col d-flex justify-content-center">
-                <a href="login.php"><button class="btn btn-danger">Log out</button></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php include('shared/assets/userinfo.php') ?>
       </div>
     </div>
   </div>
@@ -197,18 +171,18 @@ $postResult = executeQuery($postQuery);
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <!-- Delete Button -->
-                        <li>
-                          <button class="btn option-dropdown w-100 text-start" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal" style="color: red;">
+                        <li class="option-dropdown px-3 py-1">
+                          <a data-bs-toggle="modal" data-bs-target="#deleteModal" style="color: red;">
                             <i class="bi bi-trash3 px-1"></i>
                             Delete
-                          </button>
+                          </a>
                         </li>
                         <!-- Edit Button -->
-                        <li>
-                          <button class="btn option-dropdown w-100 text-start" type="button">
+                        <li class="option-dropdown px-3 py-1">
+                          <a type="button">
                             <i class="bi bi-pencil-square px-1"></i>
                             Edit
-                          </button>
+                          </a>
                         </li>
                       </ul>
                     </div>
