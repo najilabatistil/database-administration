@@ -93,13 +93,12 @@
                 </select>
               </div>
 
+              <!-- Apply Filter -->
+              <div class="text-center">
+                <button type="submit" name="filterBtn" class="btn btn-primary px-2">Apply</button>
+              </div>
+              
             </div>
-            
-            <!-- Apply Filter -->
-            <div class="text-center">
-              <button type="submit" name="filterBtn" class="btn btn-primary px-2">Apply</button>
-            </div>
-
           </div>
         </div>
       </div>
