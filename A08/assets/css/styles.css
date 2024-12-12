@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+/* Body */
+body {
+  background-color: #F4F6F9;
+  font-family: "Manrope", sans-serif;
+}
+
+h1, h5 {
+  color: #800000;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.navbar-brand {
+  color: #800000 !important;
+}
+
+/* Button */
+.btn-outline-primary {
+  --bs-btn-color:#800000;
+  --bs-btn-border-color:#800000;
+  --bs-btn-hover-bg:#800000;
+  --bs-btn-hover-border-color:#800000;
+  --bs-btn-active-bg:#800000;
+  --bs-btn-active-border-color:#800000;
+  --bs-btn-disabled-color:#800000;
+  --bs-btn-disabled-border-color:#800000;
+}
+
+.btn-primary {
+  --bs-btn-bg:#800000;
+  --bs-btn-border-color:#800000;
+  --bs-btn-hover-bg:#ab0000;
+  --bs-btn-hover-border-color:#ab0000;
+  --bs-btn-active-bg:#ab0000;
+  --bs-btn-active-border-color:#ab0000;
+}
+
+/* Table */
+.card {
+  overflow: hidden;
+}
+
+th {
+  background-color: #800000 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
